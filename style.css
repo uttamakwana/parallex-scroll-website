@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  height: 0.1rem;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #67ccff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #194eb9;
+  border-radius: 0.5rem;
+}
+
+body {
+  background-color: #1d002c;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  padding: 25px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+}
+
+#logo {
+  font-size: 2rem;
+  color: #12f7ff;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #12f7ff;
+  trasition: all ease 0.4s;
+}
+
+.nav-list li a:hover {
+  box-shadow: 0 0 0.5rem #12f7ff;
+  background-color: #12f7ff;
+  /* border: none; */
+  color: #1d002c;
+}
+
+section {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+.parallex-home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.parallex-home img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.parallex-home #parallex-heading {
+  position: absolute;
+  font-size: 3rem;
+  text-shadow: 0 10px 4px rgba(0, 0, 0, 0.85);
+  font-weight: 800;
+  top: 85%;
+  left: 10%;
+}
+
+.parallex-home #moon,
+.parallex-about #desert-moon {
+  mix-blend-mode: screen;
+}
+
+.parallex-about {
+  position: relative;
+  padding: 25px 10%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: absolute;
+  z-index: 1003;
+  width: 50%;
+}
+
+.info h1,
+.heading {
+  font-size: 3rem;
+  letter-spacing: -2px;
+  line-height: 54px;
+}
+
+.info p,
+.body-text {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+
+.info a,
+.btn {
+  background-color: #12f7ff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  max-width: 150px;
+  border-radius: 10px;
+  transition: all ease 400ms;
+  /* width: 40px; */
+}
+
+.info a:hover {
+  box-shadow: 0 0 10px #12f7ff;
+  background-color: #1d002c;
+  color: #fff;
+}
+
+.parallex-about img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.parallex-about #waterfall {
+  position: absolute;
+  top: -95px;
+}
+
+.parallex-product {
+  padding: 10%;
+}
+
+.parallex-product h1 {
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.product-card {
+  padding: 1rem;
+  border: 2px solid #12f7ff;
+  transition: all ease 400ms;
+  border-radius: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.product-card-info {
+  margin-top: 32px;
+}
+
+.product-card-info a {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  margin-top: -4rem;
+  filter: drop-shadow(0 0 0.5rem #194eb9);
+}
+
+#desert-moon {
+  /* width: auto;
+  height: auto; */
+  top: 400px;
+  z-index: 1001;
+}
+
+#man {
+  /* width: auto;
+  height: auto;
+  top: 50px; */
+}
+
+.progress-bar {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 2000;
+  width: 50px;
+  height: 50px;
+  /* background-color: #194eb9; */
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.progress-value {
+  rotate: -90deg;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  color: black;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
